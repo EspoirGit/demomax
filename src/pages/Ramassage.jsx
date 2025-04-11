@@ -71,7 +71,7 @@ const Ramassage = () => {
     if (!latitude || !longitude) {
       const fetchPoubelles = async () => {
         try {
-          const response = await axios.get('http://localhost:3000/api/poubelles'); // Remplacez par votre endpoint API
+          const response = await axios.get('https://demo-max-1.onrender.com/api/poubelles'); // Remplacez par votre endpoint API
           setPoubelles(response.data);
 
           // Récupérer les détails de localisation pour chaque poubelle

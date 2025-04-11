@@ -21,7 +21,7 @@ const Statistiques = () => {
     const fetchPoubelles = async () => {
       try {
         // Revert to localhost for local development
-        const response = await axios.get('http://localhost:3000/api/poubelles');
+        const response = await axios.get('https://demo-max-1.onrender.com/api/poubelles');
         const poubellesData = response.data;
 
         // Calculate statistics immediately
