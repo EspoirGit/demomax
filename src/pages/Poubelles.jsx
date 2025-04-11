@@ -15,7 +15,7 @@ const Poubelles = () => {
     // Récupération des données des poubelles
     const fetchPoubelles = async () => {
       try {
-        const response = await axios.get(`${process.env.REACT_APP_API_URL}/poubelles`);
+        const response = await axios.get('https://demo-max-1.onrender.com/api/poubelles');
         setPoubelles(response.data);
       } catch (error) {
         console.error('Erreur lors de la récupération des poubelles :', error);
