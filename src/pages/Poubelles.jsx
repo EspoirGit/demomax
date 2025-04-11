@@ -121,7 +121,7 @@ const Poubelles = () => {
           onMouseEnter={(e) => e.target.style.backgroundColor = '#2980b9'}
           onMouseLeave={(e) => e.target.style.backgroundColor = '#3498db'}
         >
-          Voir sur la carte
+          Consultez la carte
         </button>
       </div>
     </div>
