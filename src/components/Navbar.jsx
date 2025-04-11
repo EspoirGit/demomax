@@ -34,7 +34,7 @@ const Navbar = () => {
         marginBottom: '2rem', 
         color: '#ecf0f1' 
       }}>
-        Dashboard
+        Tabbleau de bord
       </h1>
       <ul style={{ 
         listStyle: 'none', 
