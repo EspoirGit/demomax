@@ -96,7 +96,7 @@ L'application interagit avec les points de terminaison suivants :
 Pour configurer l'application, créez un fichier `.env` à la racine du projet et ajoutez les variables suivantes :
 
 ```
-REACT_APP_API_URL=http://localhost:3000
+REACT_APP_API_URL=https://demo-max-1.onrender.com/
 ```
 
 ## Déploiement
