@@ -23,6 +23,26 @@
         flex-direction: column;
         min-height: 100vh;
       }
+
+      /* Responsiveness for tablets */
+      @media (max-width: 768px) {
+        #root {
+          padding: 10px;
+        }
+        body {
+          font-size: 14px;
+        }
+      }
+
+      /* Responsiveness for mobile devices */
+      @media (max-width: 480px) {
+        #root {
+          padding: 5px;
+        }
+        body {
+          font-size: 12px;
+        }
+      }
     </style>
   </head>
   <body>

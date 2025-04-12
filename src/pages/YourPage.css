@@ -1,0 +1,21 @@
+/* Base styles */
+.your-page {
+  margin: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Responsiveness for tablets */
+@media (max-width: 768px) {
+  .your-page {
+    margin: 15px;
+    font-size: 14px;
+  }
+}
+
+/* Responsiveness for mobile devices */
+@media (max-width: 480px) {
+  .your-page {
+    margin: 10px;
+    font-size: 12px;
+  }
+}
