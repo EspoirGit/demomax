@@ -19,18 +19,8 @@ const App = () => {
     <Router>
       <Routes>
         <Route path="/login" element={<Login />} />
-        <Route
-          path="/*"
-          element={
-            <div style={{ padding: '1rem' }}>
-              {/* Adjusted layout since Navbar and other components are removed */}
-              <Routes>
-                <Route path="/statistiques" element={<ProtectedRoute element={<Statistiques />} />} />
-                <Route path="*" element={<Navigate to="/statistiques" />} /> {/* Default route */}
-              </Routes>
-            </div>
-          }
-        />
+        <Route path="/statistiques" element={<ProtectedRoute element={<Statistiques />} />} />
+        <Route path="*" element={<Navigate to={isAuthenticated() ? "/statistiques" : "/login"} />} /> {/* Default route */}
       </Routes>
     </Router>
   );
