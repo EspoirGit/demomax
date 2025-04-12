@@ -26,6 +26,7 @@ const App = () => {
               {/* Adjusted layout since Navbar and other components are removed */}
               <Routes>
                 <Route path="/statistiques" element={<ProtectedRoute element={<Statistiques />} />} />
+                <Route path="*" element={<Navigate to="/statistiques" />} /> {/* Default route */}
               </Routes>
             </div>
           }
