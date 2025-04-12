@@ -5,7 +5,45 @@
     <link rel="icon" type="icon" href="/vite-p.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FRIARE IoT</title>
-    <link rel="stylesheet" href="/src/styles/global.css" /> <!-- Link external CSS -->
+    <style>
+      /* Styles de base pour la responsivité */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html, body {
+        width: 100%;
+        height: 100%;
+        font-family: Arial, sans-serif;
+        overflow-x: hidden;
+      }
+      #root {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      /* Responsiveness for tablets */
+      @media (max-width: 768px) {
+        #root {
+          padding: 10px;
+        }
+        body {
+          font-size: 14px;
+        }
+      }
+
+      /* Responsiveness for mobile devices */
+      @media (max-width: 480px) {
+        #root {
+          padding: 5px;
+        }
+        body {
+          font-size: 12px;
+        }
+      }
+    </style>
   </head>
   <body>
     <div id="root"></div>

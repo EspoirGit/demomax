@@ -170,7 +170,7 @@ const Statistiques = () => {
               style={{ 
                 marginTop: '1rem', 
                 padding: '0.5rem 1rem', 
-                backgroundColor: poubelle.niveau === 100 ? '#e74c3c' : '#3498db', 
+                backgroundColor: '#3498db', 
                 color: '#fff', 
                 border: 'none', 
                 borderRadius: '8px', 
@@ -178,15 +178,15 @@ const Statistiques = () => {
                 transition: 'background-color 0.3s ease, transform 0.3s ease' // Smooth animation
               }}
               onMouseEnter={(e) => {
-                e.target.style.backgroundColor = poubelle.niveau === 100 ? '#c0392b' : '#2980b9';
+                e.target.style.backgroundColor = '#2980b9';
                 e.target.style.transform = 'scale(1.1)';
               }}
               onMouseLeave={(e) => {
-                e.target.style.backgroundColor = poubelle.niveau === 100 ? '#e74c3c' : '#3498db';
+                e.target.style.backgroundColor = '#3498db';
                 e.target.style.transform = 'scale(1)';
               }}
             >
-              {poubelle.niveau === 100 ? 'Aller vider' : 'Voir'}
+              Voir
             </button>
           </div>
         ))}
